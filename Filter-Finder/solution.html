@@ -16,26 +16,31 @@
         /* hide the in/out messages*/
       
 p{
-   opacity:0;
+   filter:opacity(0);
+   transition: 0.5s;
 }
         /* grayscale filter the out images */
 .out{
-   filter:grayscale(80%);
+   filter:grayscale(100%);
 }
         
       /* hover states section (no css here) */
 .container{
-   filter:opacity(100%);
-transition:0.5;
+transition:0.5s;
+filter:opacity(100);
 }
-      .container:hover .middle{
-   filter:opacity(100%);
+      .container:hover{
+   filter:opacity(50%);
 }
         /* gray-out the images */
-  
+  .out{
+   filter:grayscale(100%);
+  }
         
         /* show the status message */
-  
+  p:hover{
+   filter:opacity(100);
+  }
 
       </style>
    </head>
